@@ -81,9 +81,12 @@ a.info:focus{
 }
 
 main .section-one{
-    background-color: #2E2F42B2;
-    background-image: url("../images/people-office.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     padding: 188px 0;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 main .section-one h1.title-one{
     font-size: 56px;
@@ -110,6 +113,7 @@ main .section-one button.order-button{
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 main .section-one button.order-button:hover,
 main .section-one button.order-button:focus{
@@ -127,21 +131,21 @@ main .section-two ul li.job-list-li{
 
 }
 main .section-two ul li div.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8E8F99;
     background-color: #F4F4FD;
     width: 264px;
     height: 112px;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 main .section-two ul li div svg.icon{
     display: block;
     margin: 0 auto;
     align-items: center;
     align-content: center;
-    width: 64px;
-    height: 64px;
-    margin-top: 24px;
-
 }
 main .section-two ul li h3.job-title{
     font-weight: 500;
@@ -177,10 +181,9 @@ main .section-two ul li p.job-def{
 .section-three ul li.teammates{
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 .section-three ul li div.div-teammates{
     padding: 32px 0;
@@ -191,19 +194,28 @@ main .section-two ul li p.job-def{
     gap: 24px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     padding: 0;
+
 }
 .section-three ul li div ul li a.social-icons{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-three ul li div ul li a.social-icons:hover{
+    background-color: #404bbf;
+}
+.section-three ul li div ul li a.social-icons:focus{
+    background-color: #404bbf;
 }
 .section-three ul li div ul li a svg.social-vector{
-    width: 16px;
-    height: 16px;
+    fill: #f4f4fd;
     margin: 0 auto;
     text-align: center;
 }
