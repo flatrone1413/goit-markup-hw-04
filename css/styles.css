@@ -279,7 +279,7 @@ main .section-two ul li p.job-def{
     position: relative;
     overflow: hidden;
 }
-.section-four ul li.section-four-li div.sec4-divin-p{
+.section-four ul li.section-four-li .div-img p.sec4-paragraf{
     position: absolute;
     top: 0;
     font-size: 16px;
